@@ -1,0 +1,14 @@
+.addition-block {
+  .clearfix();
+
+  > div {
+    margin-bottom: 1em;
+  }
+
+  &-right {
+    @media (max-width: @screen-xs) {
+      float: left !important;
+      clear: both;
+    }
+  }
+}

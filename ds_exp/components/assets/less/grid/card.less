@@ -1,0 +1,85 @@
+.grid-card {
+
+  .pg-row-list {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    -webkit-align-content: stretch;
+        -ms-flex-line-pack: stretch;
+            align-content: stretch;
+  }
+
+  &-item {
+
+    margin-bottom: @grid-gutter-width;
+
+    > .well {
+      border-color: fadeout(@link-color, 51%);
+      margin-bottom: 0;
+      background: fadeout(darken(@body-bg, 5%), 70%);
+    }
+
+    .row-selection {
+      padding: .3em 0;
+    }
+
+    .line-number {
+      padding: .3em 0;
+      margin-top: .1em;
+    }
+
+    &-control {
+      margin-bottom: 0.8em;
+      .details {
+        margin-right: 0.7em;
+      }
+    }
+
+    &-select {
+      line-height: 18px;
+      margin-right: .9em;
+      input {
+        margin-top: 0;
+      }
+    }
+
+    &-data {
+      clear: both;
+
+      .table {
+        width: 100%;
+        margin-bottom: 0;
+
+        th {
+          width: 30%;
+          text-align: right;
+          padding-right: 1em;
+        }
+      }
+    }
+
+  }
+
+  .line-number {
+    margin-right: 10px;
+  }
+
+  .empty-grid {
+    text-align: center;
+    width: 100%;
+  }
+
+}

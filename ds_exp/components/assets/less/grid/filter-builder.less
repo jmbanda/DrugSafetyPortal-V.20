@@ -1,0 +1,144 @@
+.filter-builder {
+
+  .dropdown {
+    > .dropdown-toggle {
+      cursor: pointer;
+    }
+    & > .dropdown-toggle.btn-default, & > .dropdown-toggle.btn-default:hover, &.open > .dropdown-toggle.btn-default {
+      text-decoration: none;
+      background: transparent;
+      box-shadow: none;
+      border: 0 none;
+      .text-underline {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &-group {
+    @padding: @padding-base-horizontal / 2;
+    clear: both;
+    padding: @padding 0;
+    box-shadow: 1px 1px 10px rgba(0,0,0,.2);
+    margin: 1em 0;
+
+    &-operator {
+      line-height: 34px;
+      padding: 0 @padding;
+      .clearfix();
+      .dropdown {
+        display: inline-block;
+        > .dropdown-toggle {
+          text-transform: lowercase;
+          color: @brand-danger;
+          padding-left: 2px;
+          padding-right: 2px;
+          padding-top: 1px;
+          padding-bottom: 3px;
+        }
+      }
+    }
+
+    &-content {
+      margin: .5em 8px .5em 20px;
+    }
+
+    &-conditions {
+      display: table;
+      table-layout: fixed;
+      width: 100%;
+    }
+
+    &-footer {
+      padding: 0 @padding;
+    }
+  }
+
+
+  &-condition {
+    display: table-row;
+    border: 1px solid red;
+    width: 100%;
+    font-size: 0;
+    white-space: nowrap;
+    margin-bottom: 4px;
+
+    & + .group {
+      margin-top: 10px;
+    }
+
+    &-field {
+      display: table-cell;
+      width: 25%;
+      vertical-align: middle;
+      padding-right: 4px;
+      padding-bottom: 4px;
+    }
+
+    &-operator {
+      display: table-cell;
+      width: 25%;
+      vertical-align: middle;
+      padding-right: 4px;
+      padding-bottom: 4px;
+    }
+
+    &-value {
+      display: table-cell;
+      vertical-align: middle;
+      padding-bottom: 4px;
+
+      &-multiple {
+        font-size: @font-size-base;
+
+        > div {
+          display: table-cell;
+          vertical-align: middle;
+        }
+      }
+
+      &-divider {
+        padding: 0 @padding-base-horizontal / 2;
+      }
+    }
+
+    &-remove {
+      vertical-align: middle;
+      display: table-cell;
+      padding-bottom: 4px;
+      width: @padding-base-horizontal * 2 + @font-size-base;
+      a {
+        border: none;
+      }
+    }
+  }
+
+  &-status {
+    width: 100%;
+    padding: 8px;
+    background-color: @well-bg;
+    margin-bottom: 8px;
+
+    &-container {
+      vertical-align: middle;
+      overflow: hidden;
+      margin-right: 6em;
+      padding: @padding-small-vertical 0;
+    }
+
+    &-disabled &-query {
+      text-decoration: line-through;
+    }
+
+    &-icon {
+      margin-right: .3em;
+    }
+
+    &-btn-group {
+      text-align: right;
+      white-space: nowrap;
+      margin-left: 8px;
+    }
+  }
+
+}

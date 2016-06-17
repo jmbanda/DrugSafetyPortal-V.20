@@ -1,0 +1,37 @@
+.table {
+
+  thead {
+    tr {
+      th.sortable {
+        cursor: pointer;
+      }
+      &.header {
+        .thead-bg (@table, @body) when (@table = transparent) {
+          background-color: @body;
+        }
+        .thead-bg (@table, @body) when not (@table = transparent) {
+          background-color: @table;
+        }
+        .thead-bg(@table-bg, @body-bg);
+      }
+    }
+  }
+
+  tbody {
+    tr {
+      td {
+        vertical-align: middle;
+        &.line-number {
+          font-family: @font-family-monospace;
+        }
+        &.empty-grid {
+          height: 25px;
+        }
+        .row-selection {
+          margin-top: -0.3em;
+        }
+      }
+    }
+  }
+
+}

@@ -1,0 +1,25 @@
+.form-actions {
+
+  padding: @form-group-margin-bottom 0 (@form-group-margin-bottom - 5px);
+  @media (max-width: @screen-sm) {
+    padding-left: @form-group-margin-bottom;
+    padding-right: @form-group-margin-bottom;
+  }
+  margin-bottom: @form-group-margin-bottom;
+  background-color: @well-bg;
+  border-top: 1px solid @well-border;
+
+  &-top {
+    border-bottom: 1px solid @well-border;
+    border-top: 0;
+  }
+
+  .form-group {
+    margin-bottom: 0;
+  }
+
+  .btn-toolbar > .btn-group {
+    margin-bottom: 5px;
+  }
+
+}
