@@ -1,3 +1,4 @@
+![Biohackathon_logo] (http://2016.biohackathon.org/bh16-logo.png)
 ## Intro
 Originally a hack for [Tech Crunch Disrupt] Hackathon - San Francisco in 2015. [Drug Safety Portal v1.0] main idea was a consumer facing application, which allowed regular people to look what can be the potential issues of taking two drugs together. By combining APIs and research datasets, this application gave all possible evidence of drug interactions to users. Invited to further develop this app during the [2016 Biohackthon]. 
 
