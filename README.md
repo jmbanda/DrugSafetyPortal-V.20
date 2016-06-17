@@ -1,8 +1,8 @@
 ![Biohackathon_logo] (http://2016.biohackathon.org/bh16-logo.png)
-## Intro
+# Intro
 Originally a hack for [Tech Crunch Disrupt] Hackathon - San Francisco in 2015. [Drug Safety Portal v1.0] main idea was a consumer facing application, which allowed regular people to look what can be the potential issues of taking two drugs together. By combining APIs and research datasets, this application gave all possible evidence of drug interactions to users. Invited to further develop this app during the [2016 Biohackthon]. 
 
-## Objectives during 2016 Biohackthon:
+# Objectives during 2016 Biohackthon:
 - Further standardization of resource
 - Enable researchers to upload (and automatically standardize) their published DDI resources
 - Provide facilities to download data
@@ -10,7 +10,7 @@ Originally a hack for [Tech Crunch Disrupt] Hackathon - San Francisco in 2015. [
 - Allow people to Tweet to Drug Safety Portal
 - Keep track of user queries for investigation of possibly new DDIs
 
-## Pivoting Idea
+# Pivoting Idea
 Drug Safety Portal collects PUBLISHED drug-drug interactions….. Why not be a repository for unpublished ones …. Make it a full-fledged data repository!!
 
 - Allow researchers to check if they are on the right path
@@ -67,14 +67,14 @@ Drug Safety Portal collects PUBLISHED drug-drug interactions….. Why not be a r
 
 ## Objective 5: Allow people to Tweet to Drug Safety Portal - not yet :(
 
-- Not a vital task…. But it is still onn he todo
+- Not a vital task…. But it is still on the TO-DO
 
 ## Objective 6: Keep track of user queries for investigation of possibly new DDIs 
 
 - Implemented for all interaction with the consumer site
     - Bring on the click streams and query logs!!!
 
-## Future work
+# Future work
 
 - UX improvement!!!
 - Cleanup (and publishing) of back-end code
@@ -82,13 +82,12 @@ Drug Safety Portal collects PUBLISHED drug-drug interactions….. Why not be a r
 - Add more published datasets:
     - Currently available: LIDDI, INDI, TWOSIDES, Shah Lab’s EHR predictions
 
-## More info
+# More info
 
 - URL: [www.drugsafetyportal.org]
 - Github: you are here :)
 - Email: [jmbanda@stanford.edu]
 - Twitter: [@drjmbanda]
-
 
 [Tech Crunch Disrupt]: <https://techcrunch.com/event-type/disrupt/>
 [Drug Safety Portal v1.0]: <https://github.com/jmbanda/DrugSafetyPortal>
